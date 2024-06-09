@@ -1,0 +1,441 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*從以下變更*/
+/*共通樣式 文字、顏色、距離、單位*/
+*{
+    outline:1px solid #000
+  }
+  *,*:before,*:after{
+  box-sizing: border-box;
+  font-family:sans-serif;
+  }
+  .body{
+    padding-top:100px;
+  }
+  
+  .header{
+  width: 1920px;
+  background:#FFF;
+  display:flex;
+  gap:318px;
+  border-bottom:1px solid #F1F1F1;
+    position:fixed;
+    z-index: 3;
+  }
+  .header ul{
+    display: flex;
+    gap:40px;
+    align-items:center;
+  }
+  .header li a{
+  display: block;
+  border : 0px solid #000;
+  text-decoration:none;
+    
+  }
+  .header .fs-6{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color:#000;
+  
+  }
+  .header li a:hover{
+    border : 0.8px solid #000;
+    font-weight:700;
+    border: 2px dashed rgba(128, 128,128,2);
+  }
+  
+  .header img{
+  padding: 28px 0px;
+  }
+  .title{
+    padding: 80px 0px 80px 0px;
+    background: #FAFAFA;
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+  }
+  
+  .quote{
+      color: #1E1E1E;
+      width: 50%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+  }
+  
+  .quote-right{
+      align-self: flex-end;
+    /*個別對齊*/
+  }
+  .quote-upper, .quote-lower {
+    font-family: 微軟正黑體;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28.8px;
+  text-align: left;
+  color: rgba(30, 30, 30, 1);
+  }
+  .quote-upper{
+     position: relative;
+     z-index: 1;
+    text-align: center;
+  }
+  .mark-upper{
+    position: absolute;
+    bottom: 0;
+    right:65px;
+    z-index: -1;
+  }
+  
+  .quote-lower{
+    margin-top:16px;
+     position: relative;
+     z-index: 2;
+    text-align: center;
+  }
+  .mark-lower{
+    position: absolute;
+    bottom: 0;
+    right:85px;
+    z-index: -1;
+  }
+  
+  .mark-upper h2{
+      align-self: flex-end;
+    /*個別對齊*/
+  }
+  .banner-list{
+      color: #5B5B5B;
+      max-width: 50%;
+      margin: 0 auto;
+      display: flex;
+      margin-top: 24px;
+      gap:40px;
+    justify-content:center;
+  }
+  
+  .list-1, .list-2{
+    text-align: center;
+  }
+  .list-1 p ,.list-2 p{
+    color: rgba(59, 59, 59, 1);
+  }
+  .banner-list hr{
+      width: 24px;
+      border: 2px solid #C1C1C1;
+  }
+  .container{
+  max-width: 1296px;
+  padding: 120px 0px 72px 0px;
+  margin: 0 auto;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+  }
+  
+  .item{
+    width: 636px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom:80px;
+  }
+  .item img{
+    width: 100%;
+    border-radius: 8px;
+  }
+  .container h2{
+    font-size: 28px;
+    font-family: Noto Sans;
+    line-height: 33.6px;
+    text-align: left;
+    color: #3B3B3B;
+    margin-top:16px;
+    font-weight:700;
+  }
+  .item .fs-6 ,li{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #919191;
+  margin-top:8px;
+  font-weight:400;
+  font-family: 微軟正黑體;
+  }
+  .item .fs-6 {
+   padding-left:12px;
+  }
+  
+  .item li{
+  background: #F1F1F1;
+  color: #3B3B3B;
+  display:block;
+  padding: 4px 12px;
+  border-radius: 16px;
+  text-align: center;
+  }
+  
+  .item ul{
+  display:flex;
+  text-align: right;
+  justify-content:flex start;
+  margin-top:24px;
+  margin-left:12px;
+  gap:10px;
+  
+  }
+  
+  .item h2{
+    text-indent:12px;
+    font-family: 微軟正黑體;
+  }
+  
+  .item li{
+    text-indent:3px;
+    font-family: 微軟正黑體;
+  }
+  .page{
+  max-width: 1296px;
+  margin: 0 auto;
+  }
+  .page ul{
+    display:flex;
+    padding-bottom:120px;
+    justify-content: center;
+    gap:16px;
+  }
+  .page li{
+   background: #F1F1F1;
+    width: 40px;
+    height: 40px;
+    border-radius:4px;
+    align-items:center;
+  }
+  .fs-4-1{
+   display: block;
+  font-family:微軟正黑體;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: center;
+   text-decoration:none;
+    color:#FFFF;
+    background: #3B3B3B;
+      width: 40px;
+    height: 40px;
+    border-radius:4px;
+  }
+  .fs-4{
+     display: block;
+  font-family:微軟正黑體;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: center;
+   text-decoration:none;
+    color:#3B3B3B;
+  }
+  .page li a:hover{
+    background: #3B3B3B;
+    color: #FFFFFF;
+    width: 40px;
+    height: 40px;
+    border-radius:4px;
+  }
+  /*表尾參考調整 用區塊元素包a連結
+  然後在CSS放連結圖片 background-image: url()*/
+  
+  a {
+      text-decoration: none;
+  }
+  
+  .footer {
+      background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/footer-bg-lg.png?raw=true");
+    background-size:cover;
+      margin: 0 auto;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 50px 0;
+    font-family: 微軟正黑體;
+  }
+  .footer img{
+      margin: 0 auto;
+    width: 100%;
+  }
+  
+  .footer-item{
+      display: flex;
+      flex-direction: column;
+  }
+  
+  .footer-item li{
+    width: 306px;
+    height: 72px;
+  }
+  
+  .logo h2 a {
+      background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/2f8d8c7a6133b448ecff5bf0a3d282b87b7c6a7e/2024%20web-camp/logo.svg");
+      display: block;
+      width: 120px;
+      height: 54px;
+    overflow: hidden;/*溢出*/
+    text-indent: 100%;
+    white-space: nowrap;/*遇到連續空白字元與換行字元時，會合併成一個空白字元，不論外層有沒有容器都強制不換行。*/
+    margin-bottom: 24px;
+    background-size:cover;
+  }
+  .logo p,.logo span {
+    display: block;
+      margin-top: 24px;
+    font-size: 20px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+  
+  }
+  
+  .logo span a {
+      color: #9e9e9e;
+  line-height: 24px;
+  }
+  
+  .footer-item li {
+    display: flex;
+      background: #ffffff;
+      padding: 8px 24px;
+      border-radius: 8px;
+      border: 1px solid #c1c1c1;
+      margin-bottom: 12px;
+      width: 306px;
+  }
+  
+  .footer-item li a{
+  font-family: 微軟正黑體;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+   color: #3B3B3B;
+  }
+  
+  .footer-item .list {
+    background: #000000;
+  }
+  .footer-item .list a{
+    color: #FFFFFF;
+  }
+  
+  .footer-item a img {
+    display:inline;
+      vertical-align: middle;
+    width: 56px;
+  }
+  
+  @media(max-width:1271px){
+   .container{
+    justify-content: center;
+   }
+   .footer img{
+    width: 100%;
+    }  
+  }
+  
+  @media(max-width: 767px) {
+    .quote-left{
+     align-self: center;
+    }
+    .quote-right{
+      display:none;
+    }
+    .banner-list{
+      margin-top:40px;
+      flex-wrap:wrap;
+      gap:20px;
+    }
+    .footer {
+      flex-direction:column;
+      align-items: center;
+      background-image:url("https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/footer-bg-sm.png?raw=true")
+    }
+    
+    .logo {
+      text-align:center;
+    }
+    
+    .logo a{
+      margin: 0 auto;
+      width: 120px;
+    }
+    
+    .logo p{
+      //styleName: fs-6;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+    }
+    
+    .logo span{
+      //styleName: fs-6;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  
+    }
+    
+    .footer-item ul {
+          display: flex;
+          flex-direction: column;
+          padding: 0;
+          margin-top: 40px;
+      }
+  }
